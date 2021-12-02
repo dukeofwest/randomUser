@@ -1,19 +1,15 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RandomUserListService {
+  private baseUrl = 'https://randomuser.me/api/?results=5';
 
-  private baseUrl = 'https://randomuser.me/api/?results=5'
-
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor(private http: HttpClient) {}
 
   getUsersApi() {
-    return this.http.get(`${this.baseUrl}`)
-    
+    return this.http.get(`${this.baseUrl}`);
   }
 }

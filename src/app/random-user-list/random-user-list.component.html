@@ -1,26 +1,31 @@
 <div class="container">
-    <!-- Toolbar -->
-<div class="toolbar" role="banner">
+  <!-- Toolbar -->
+  <div class="toolbar mar-b-12 pb-4" role="banner">
     <span class="title">Random Users</span>
-      <div class="spacer"></div>   
+    <div class="spacer"></div>
   </div>
-  <table class="table table-striped" id="user_table">
-    <thead>
-    <tr>  
-        <th>User</th>
-        <th>City</th>
-        <th>Mobile</th>
-    </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
+
+  <div class="row">
+    <div class="col-md-4">
+      <table class="table table-striped" id="user_table">
+        <thead>
+          <tr>
+            <!--<th>User</th>
+        <th>City</th>-->
+            <th>Mobile</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let user of userList">
+          <tr>
+            <!--<td>{{ user.name.first}} {{user.name.last}}</td>
+            <td>{{user.location.city}}</td>-->
+            <td>{{ user.phone }}</td>
             <td></td>
             <td></td>
             <td></td>
-        </tr>
-    </tbody>
-</table>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
