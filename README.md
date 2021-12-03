@@ -1,5 +1,6 @@
 # RandomUser
 
+Displays a list of random users
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
 ## Development server
